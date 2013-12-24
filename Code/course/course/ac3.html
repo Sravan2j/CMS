@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Course Management System</title>
+<script>function f2(){
+if(document.upload.F1.value==0)
+	{
+        alert("Please Upload a File");
+		return false;
+    }
+  return true;
+}</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #EBEBEB;
+}
+.style2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #5691B1;
+	font-family: "Courier New", Courier, monospace;
+}
+.style4 {font-size: 9px}
+a:link {
+	color: #72AACF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #639DC3;
+}
+a:hover {
+	text-decoration: underline;
+	color: #5D97BC;
+}
+a:active {
+	text-decoration: none;
+	color: #508BB3;
+}
+.style8 {
+	color: #666666;
+	font-weight: bold;
+}
+.style11 {color: #487BA8}
+-->
+</style></head>
+
+<body>
+    <form name="upload" ENCTYPE="multipart/form-data" ACTION="upload.jsp" METHOD=POST onSubmit="return f2()">
+<table width="778" height="317" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="780" height="69" valign="bottom" background="images/header.gif"><div align="center"><span class="style2">Adding Syllabus </span></div></td>
+  </tr>
+  <tr>
+    <td height="201" valign="middle"><table width="764" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td bgcolor="#DADADA"><table width="756" height="203" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="764" bgcolor="#CCCCCC"><table width="749" height="207" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td valign="top" bgcolor="#FFFFFF"><p class="style4">&nbsp;</p>
+                    <table border="1" align="center" bordercolor="#93B976" >
+                   
+                      <tr>
+                        <td><span class="style8">Choose the Syllabus file To Upload:</span></td>
+                        <td><INPUT NAME="F1" TYPE="file"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><p align="right">
+                          <INPUT name="submit" TYPE="submit" VALUE="Upload" >
+                        </p></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <center>
+                      <h3> <b><font color="red">Note: </font><span class="style11">Provided that the filename must be Subject Code and the file should be READ-ONLY</span></b></h3>
+                    </center>
+                    <table width="748" height="165" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="81" valign="top" background="ch.JPG" bgcolor="#8AB06B">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="44" background="images/footer2.gif">&nbsp;</td>
+  </tr>
+</table></form>
+</body>
+</html>

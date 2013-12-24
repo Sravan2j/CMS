@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Course Management System</title>
+<script>
+     function fun(){
+        var d=document.add.creg.value;
+       document.add.creg.value=d.toUpperCase();
+     }
+    function f1(){
+if(document.add.cname.value==0)
+	{
+        alert("please select course");
+		return false;
+    }
+    if((document.add.cname.value=='B.Tech')&(document.add.bname.value=='-'))
+	{
+        alert("please select Branch");
+		return false;
+    }
+ if(document.add.creg.value==0)
+        {
+        alert("Please enter regulation");
+		return false;
+		}
+        if(isNaN(document.add.creg.value)==false)
+       {alert("regulation should contain alphabets");
+       return false;
+   }
+        if(document.add.year.value==0)
+        {
+        alert("Please select year");
+		return false;
+		}
+        if(document.add.seats.value==0)
+        {
+      alert("Please enter number of seats");
+		return false;
+		}
+         if(isNaN(document.add.seats.value))
+       {alert("Seats should be number");
+       return false;
+   }
+  return true;
+}</script><style type="text/css">
+<!--
+body {
+	background-color: #EBEBEB;
+}
+.style2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #5691B1;
+	font-family: "Courier New", Courier, monospace;
+}
+.style3 {color: #666666}
+.style4 {font-size: 9px}
+-->
+</style></head>
+
+<body><form name="add" method="post" action="add.jsp" onSubmit="return f1()">
+<table width="778" height="317" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="780" height="69" valign="bottom" background="images/header.gif"><div align="center"><span class="style2">Course Information</span></div></td>
+  </tr>
+  <tr>
+    <td height="201" valign="middle"><table width="764" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td bgcolor="#DADADA"><table width="756" height="203" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="764" bgcolor="#CCCCCC"><table width="749" height="207" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td valign="top" bgcolor="#FFFFFF"><p class="style4">&nbsp;</p>
+                    <table width="264" border="0" align="center" cellpadding="10" cellspacing="0">
+                      <tr>
+                        <td><span class="style3">Course Name:</span></td>
+                        <td><select name="cname">
+                          <option value="0">-select-</option>
+                          <option value="B.Tech">B.Tech</option>
+                          <option value="M.Tech">M.Tech</option>
+                          <option value="M.B.A">M.B.A</option>
+                          <option value="M.C.A">M.C.A</option>
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td><span class="style3">Branch Name :</span></td>
+                        <td><select name="bname">
+                          <option value="-" selected="selected">------</option>
+                          <option value="CSE">CSE</option>
+                          <option value="ECE">ECE</option>
+                          <option value="EEE">EEE</option>
+                          <option value="IT">IT</option>
+                          <option value="CIVIL">CIVIL</option>
+                          <option value="MECH">MECH</option>
+                          <option value="EIE">EIE</option>
+                          <option value="CHEMICAL">CHEMICAL</option>
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td><span class="style3">Course Regulation :</span></td>
+                        <td><input name="creg" type="text" size="10" onkeyup="fun()"/></td>
+                      </tr>
+                      <tr>
+                        <td><span class="style3">Year Of Starting :</span></td>
+                        <td><select name="year">
+                          <option value="0">-year-</option>
+                          <option value="2001">2001</option>
+                          <option value="2002">2002</option>
+                          <option value="2003">2003</option>
+                          <option value="2004">2004</option>
+                          <option value="2005">2005</option>
+                          <option value="2006">2006</option>
+                          <option value="2007">2007</option>
+                          <option value="2008">2008</option>
+                          <option value="2009">2009</option>
+                          <option value="2010">2010</option>
+                          <option value="2011">2011</option>
+                          <option value="2012">2012</option>
+                          <option value="2013">2013</option>
+                          <option value="2014">2014</option>
+                          <option value="2015">2015</option>
+                          <option value="2016">2016</option>
+                          <option value="2017">2017</option>
+                          <option value="2018">2018</option>
+                          <option value="2019">2019</option>
+                          <option value="2020">2020</option>
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td><span class="style3">No. Of Seats :</span></td>
+                        <td><input name="seats" type="text" size="10" /></td>
+                      </tr>
+                    </table>
+                    <table width="748" height="165" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="81" valign="top" background="ch.JPG" bgcolor="#8AB06B"><div align="center">
+                        <p>&nbsp;                          </p>
+                        <p>
+                          <input  type="submit" name="Submit" value="Add" />
+                          </p>
+                      </div></td>
+                    </tr>
+                  </table></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="44" background="images/footer2.gif">&nbsp;</td>
+  </tr>
+</table></form>
+</body>
+</html>

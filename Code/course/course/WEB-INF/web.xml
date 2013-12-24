@@ -1,0 +1,23 @@
+<web-app>
+  <context-param>
+    <param-name>driver</param-name>
+	<param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>url</param-name>
+	<param-value>jdbc:mysql://127.0.0.1/course</param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+	<param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pswd</param-name>
+	<param-value>s</param-value>
+  </context-param>
+   <context-param>
+    <param-name>path</param-name>
+	<param-value>C:\\Program Files\\Apache Software Foundation\\Tomcat 5.5\\webapps\\course\\syllabus\\</param-value>
+  </context-param>
+</web-app>
+
