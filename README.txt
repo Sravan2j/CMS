@@ -1,4 +1,4 @@
-Project Title: Telecom Connection System
+Project Title: Course Management System
 
 Technology : JSP, HTML, JavaScript, AJAX. 
 
